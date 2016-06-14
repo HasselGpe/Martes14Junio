@@ -39,16 +39,12 @@
 # p true
 ##################################################################################################################################
 def shuffle(array)
-  # escribe el algoritmo que revuelva un array
-  numbers = [] #Array vacio para ir metiendo los numeros aleatoriamente 
-  #Se hace la declaraciòn de while que correra hasta que la longitud del array "number" se igual  a la longitud del array que nos da el usurio 
+  numbers = [] 
       while numbers.length <= array.length
-      #Escogera un elemento al azar de el array cada vez que entre 
           item = [array[rand(array.length)]]
-          #Metera este numero al array numbers
           numbers << item 
       end
-      numbers #Regresa el array lleno con los numeros aleatorios
+      numbers 
 end
 # Driver code:
 array = (1..15).to_a
