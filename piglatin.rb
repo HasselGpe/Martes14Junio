@@ -48,7 +48,6 @@ def pig_latin(palabra)
     palabra[i..-1] + cons + "ay"
   end
 end
-
 def pig_latin_oracion(sentence)
   array = sentence.split(" ")
   array.collect! do |palabra|
@@ -62,15 +61,11 @@ def pig_latin_oracion(sentence)
   end
   array.join(" ")
 end
-
 puts "Escribe una palabra que sera convertida a Pig Latin"
 palabra = gets.chomp
-
 puts "#{palabra} en Pig Latin es #{pig_latin(palabra)}"
-
 puts "Escribe una oración para ser convertida en Pig Latin"
 sentence = gets.chomp.to_s
-
 puts "Tu oracion en Pig Latin es:"
 puts pig_latin_oracion(sentence)
 
